@@ -1,0 +1,72 @@
+.btn{
+    padding: 13px 35px;
+    color: $black;
+    border-radius: 10px;
+    border: 1px solid $black;
+    white-space: nowrap;
+    display: block;
+}
+
+.btn,
+.cta-btn {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+.cta-btn{
+    position: relative;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    padding: 13px;
+    color: $white;
+    background: $red;
+    border: none;
+    border-radius: 10px;
+
+    &:hover{
+        background: #f80011;
+        color: $white;
+    }
+
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1px;
+        height: 100%;
+        right: 60px;
+        top: 0;
+        background: #ee1e32;
+    }
+
+    &:before{
+        right: 59px;
+        background: #ea5462;
+    }
+
+
+    span{
+        display: inline-block;
+        width: 37px;
+        margin-left: 23px;
+        color: $white;
+        background: $red;
+
+        &:before{
+            content: '';
+            position: absolute;
+            display: block;
+            top: 60%;
+            right: 23px;
+            transform: translateY(-50%);
+            border: 9px solid transparent;
+            border-top: 8px solid $white;
+        }
+
+    }
+
+}

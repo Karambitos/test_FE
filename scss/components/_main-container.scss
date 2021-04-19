@@ -1,0 +1,14 @@
+.main-content{
+    display: flex;
+
+    .content{
+        width: 100%;
+    }
+
+    aside{
+        width: 210px;
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+}

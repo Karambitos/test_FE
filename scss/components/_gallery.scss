@@ -1,0 +1,144 @@
+.product-gallery {
+    display: flex;
+    position: relative;
+
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+}
+
+.card__image_slider-main {
+    max-width: 560px;
+    position: relative;
+    z-index: 0;
+
+    @media (max-width: 620px) {
+        max-width: 320px;
+    }
+
+    .slick-list {
+        height: auto !important;
+    }
+
+    .slick-track {
+        display: flex;
+        align-items: stretch;
+    }
+}
+
+
+.card__image_slider-big{
+
+    @media (max-width: 768px) {
+            .slick-prev:before,
+            .slick-next:before {
+                content: '';
+                display: block;
+                border: solid $black;
+                border-width: 0 2px 2px 0;
+                display: inline-block;
+                padding: 4px;
+                transform: rotate(-45deg)
+            }
+
+            .slick-prev {
+                transform: translateY(10px);
+
+                &:before {
+                    transform: rotate(135deg);
+                }
+            }
+    }
+
+}
+
+.card__image_slider-small {
+    display: flex;
+    height: inherit;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    background: $lightgray;
+    width: 74px;
+    margin: 0 0 0 25px;
+    padding: 0 10px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+
+    .slick-slide {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 8px;
+        // width: 54px;
+        // height: 37px;
+        // padding: 10px;
+
+        img {
+            object-fit: cover;
+            // object-position: 50% 50%;
+            // width: 100%;
+            // height: 100%;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .slick-list {
+        display: flex;
+        flex-grow: 1;
+        margin: 20px 0px;
+        overflow: hidden;
+    }
+
+    .slick-track {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100% !important;
+    }
+
+    .slick-arrow,
+    .slick-arrow .icon {
+        height: auto;
+        position: static;
+        background-color: transparent;
+    }
+
+    .slick-arrow{
+        height: 20px;
+        margin: auto ;
+    }
+
+
+
+    .slick-prev:before,
+    .slick-next:before {
+        content: '';
+        display: block;
+        border: solid $icon;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 4px;
+        transform: rotate(45deg)
+    }
+
+
+    .slick-prev {
+            transform: translateY(10px);
+
+        &:before{
+            transform: rotate(-135deg);
+        }
+    }
+
+}
+

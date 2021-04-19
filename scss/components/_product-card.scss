@@ -1,0 +1,41 @@
+.sku{
+    color: $breadcrumb;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.product-wrapper {
+    max-width: 650px;
+
+    @media (max-width: 1024px) {
+        max-width: unset;
+    }
+
+
+    .content-cta {
+        display: flex;
+        justify-content: space-between;
+        padding: 36px 0 27px;
+
+        @media (max-width: 620px) {
+            flex-direction: column;
+        }
+
+        .price {
+            font-size: 40px;
+            line-height: 48px;
+            font-weight: 300;
+            color: $darkred;
+
+            @media (max-width: 620px) {
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            sup {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+    }
+}

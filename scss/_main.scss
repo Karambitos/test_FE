@@ -1,0 +1,92 @@
+$white: #fff;
+$black: #333;
+$lightgray: #F0F3F8;
+
+$red: #EE3346;
+$darkred: #E92C39;
+$icon: #707070;
+$text: #454647;
+$breadcrumb: #999999;
+$breadcrumbActive: #454647;
+
+
+* {
+    box-sizing: border-box;
+    transition: 1000ms;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    font-family: 'Open Sans',
+    sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: $red;
+    }
+
+    &.active {
+        color: $red;
+    }
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 14px;
+
+    @media (max-width: 620px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+section {
+    display: block;
+
+    @media (max-width: 1024px) {
+        margin-top: 100px;
+    }
+}
+
+.site-container{
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+.main-content{
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+ .spinner {
+     display: none;
+     box-sizing: border-box;
+     cursor: pointer;
+     z-index: 102;
+     height: 40px;
+     width: 40px;
+     margin: 0;
+     
+
+    @media (max-width: 1024px) {
+        display: block;
+    }
+ }
+
+ .spinner-line {
+     background-color: #000;
+     transition: all 0.3s;
+     box-sizing: border-box;
+     position: absolute;
+     width: 40px;
+     height: 1px;
+
+     margin-top: 12px;
+ }
+
+ .home .spinner-line {
+     background-color: white;
+ }
+
+ .diagonal.part-1 {
+     position: relative;
+     transition: all 0.3s;
+     box-sizing: border-box;
+     float: left;
+ }
+
+ .diagonal.part-2 {
+     transition: all 0.3s;
+     box-sizing: border-box;
+     position: relative;
+     float: left;
+     margin-top: 10px;
+ }
+
+
+ .spinner-line.active.diagonal.part-1 {
+     transition: all 0.3s;
+     box-sizing: border-box;
+     transform: rotate(135deg);
+     margin-top: 20px;
+ }
+
+ .spinner-line.active.diagonal.part-2 {
+     transition: all 0.3s;
+     box-sizing: border-box;
+     transform: rotate(-135deg);
+     margin-top: -1px;
+ }

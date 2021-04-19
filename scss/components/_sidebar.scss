@@ -1,0 +1,22 @@
+.btn + .sidebar-list{
+    margin-top: 25px;
+}
+
+.sidebar{
+    .sidebar-item{
+        font-size: 14px;
+        line-height: 40px;
+        font-weight: 400;
+
+        &.has-sub{
+            font-size: 18px;
+
+            .icon-open{
+                margin-left: 15px;
+                margin-bottom: 2px;
+                transform: rotate(-135deg);
+            }
+        }
+    }
+
+}
