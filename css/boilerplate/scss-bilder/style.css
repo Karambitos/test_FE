@@ -211,7 +211,7 @@ img {
     top: 0;
     left: 0;
   }
-  header .header-inner-wrapper {
+  header .header-wrapper {
     background: #F0F3F8;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -234,7 +234,7 @@ header.active {
   overflow: scroll;
 }
 
-header.active .header-inner-wrapper {
+header.active .header-wrapper {
   left: 0;
 }
 

@@ -9,7 +9,7 @@ header{
         left: 0;
 
 
-        .header-inner-wrapper {
+        .header-wrapper {
             background: $lightgray;
             display: flex;
             flex-direction: column;
@@ -27,7 +27,7 @@ header{
         height: 100%;
         overflow: scroll;
 
-        .header-inner-wrapper {
+        .header-wrapper {
             left: 0;
         }
     }
